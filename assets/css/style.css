@@ -34,6 +34,12 @@ footer {
   text-align: center;
   width: 100%;
 }
+form {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+label {
+  color: #777777;
+}
 nav {
   background-color: #ffffff;
   overflow: auto;
