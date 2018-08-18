@@ -69,6 +69,9 @@ a.nav-link.middle {
   margin: 20px auto 20px auto;
   overflow: hidden;
 }
+.header-576 {
+  display: none;
+}
 .sticky-wrap {
   min-height: calc(100vh - 161px);
 }
@@ -81,5 +84,49 @@ a.nav-link.middle {
   float:left;
   width: 250px;
   height: auto;
-  margin: 0 10px;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
+  .header-576 {
+    background-color: #ffffff;
+    overflow: auto;
+    border-bottom: 3px solid;
+    border-color: #cccccc;
+    height: 120px;
+    display: block;
+  }
+  .header-576 > h1 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top:0;
+    padding-top: 10px;
+  }
+  .nav-container-576 {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  a.navi.active {
+    text-decoration: underline;
+  }
+  a.navi.middle {
+    border-color: #777777;
+    border: 1px;
+    border-style: none solid;
+  }
+  a.navi {
+    padding: 0 10px;
+    font-size: 20px;
+    width: 10%;
+    text-decoration: none;
+    color: #777777;
+  }
+  a.navi:hover {
+    color:red;
+  }
 }
