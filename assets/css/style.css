@@ -133,8 +133,6 @@ a.nav-link.middle {
   }
   .header-576 {
     background-color: #ffffff;
-    border-bottom: 3px solid;
-    border-color: #cccccc;
     height: 120px;
     margin-bottom: 20px;
     display: block;
@@ -151,6 +149,8 @@ a.nav-link.middle {
     background-color: #ffffff;
     text-align: center;
     padding-bottom: 25px;
+    border-bottom: 3px solid;
+    border-color: #cccccc;
   }
   a.navi.active {
     text-decoration: underline;
@@ -169,5 +169,11 @@ a.nav-link.middle {
   }
   a.navi:hover {
     color:red;
+  }
+  #profileImg {
+    float:none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
