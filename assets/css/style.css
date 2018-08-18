@@ -98,7 +98,7 @@ a.nav-link.middle {
   position: absolute;
   bottom: 10%;
 }
-/* How I designed my sticky wrapper. Didn't actually make sense in this case to make 
+/* How I designed my sticky wrapper. Didn't actually make sense in this case to make
 the footer it's own row. */
 .sticky-wrap {
   min-height: calc(100vh - 161px);
@@ -163,6 +163,9 @@ the profile picture and the text. (It was basically just turning off float.) */
     padding-bottom: 25px;
     border-bottom: 3px solid;
     border-color: #cccccc;
+  }
+  .panel {
+    margin-left: 17%;
   }
   /* had to redefine nav since nav was a class used by bootstrap too many conflict came up
   adding my own rules on the existing class. */
