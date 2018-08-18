@@ -1,3 +1,4 @@
+/* Most of the custom css was just to add the required formatting (font, back color etc.) */
 *{
   box-sizing: border-box;
 }
@@ -80,8 +81,6 @@ a.nav-link.middle {
   display: none;
 }
 .panel {
-  /* height: 200px;
-  width: 300px; */
   max-width: 100%;
   height:auto;
   display: block
@@ -99,9 +98,15 @@ a.nav-link.middle {
   position: absolute;
   bottom: 10%;
 }
+/* How I designed my sticky wrapper. Didn't actually make sense in this case to make 
+the footer it's own row. */
 .sticky-wrap {
   min-height: calc(100vh - 161px);
 }
+/* In this particular case, I thought about using the bootstrap
+btn class, but changing the color to meet original specs would require
+me to rewrite so much of the classes (i.e. btn:hover, btn:focus, etc, etc),
+that it was shorter to just use my previously writen class. */
 .submit {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -109,6 +114,8 @@ a.nav-link.middle {
     padding: 8px 25px;
     margin-top: 10px;
 }
+/* This stuff is still required since I didn't want to break up the picture and text
+into rows and cols anymore, wouldn't have made sense.  */
 #myName {
   margin:0;
   padding: 15px 15px 0 15px;
@@ -120,6 +127,11 @@ a.nav-link.middle {
   height: auto;
   margin: 0 15px;
 }
+
+/* "navbar" dissapears past this width and no "xs" option existed for the navbar so
+I opted to just write my own that covers widths below 576px.
+I also wanted to change the formatting on the about page when it got that small with
+the profile picture and the text. (It was basically just turning off float.) */
 
 @media screen and (max-width: 576px) {
   .title{
@@ -152,6 +164,8 @@ a.nav-link.middle {
     border-bottom: 3px solid;
     border-color: #cccccc;
   }
+  /* had to redefine nav since nav was a class used by bootstrap too many conflict came up
+  adding my own rules on the existing class. */
   a.navi.active {
     text-decoration: underline;
   }
