@@ -7,7 +7,7 @@ Portfolio built using Bootstrap.
 # Built With
 - HTML
 - CSS
-- [Bootstrap] (https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - Git (For deployment.)
 
 # Version
