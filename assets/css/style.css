@@ -132,7 +132,11 @@ into rows and cols anymore, wouldn't have made sense.  */
 I opted to just write my own that covers widths below 576px.
 I also wanted to change the formatting on the about page when it got that small with
 the profile picture and the text. (It was basically just turning off float.) */
-
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 576px) {
   .title{
     text-align: center;
